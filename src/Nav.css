@@ -1,0 +1,36 @@
+.Nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 700px;
+    height: 60px;
+    background-color: #fff;
+    /*box-shadow: 0 2px 4px rgba(0, 0,
+    0, 0.1); */
+}
+
+button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #0029b1;
+    transform: scale(1.1);
+  }
+
+  button:focus {
+    outline: none;
+  }
+
+  button:active {
+    transform: scale(0.9);
+  }

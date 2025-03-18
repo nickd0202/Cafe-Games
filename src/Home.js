@@ -5,8 +5,8 @@ import "./Home.css"
 function Home(){
     return (
         <div className="bg">
+            {/* <h1>This is the home page</h1> */}
             <Nav />
-            <h1>This is the home page</h1>
         </div>
     );
 }

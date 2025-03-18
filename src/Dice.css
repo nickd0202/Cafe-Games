@@ -1,0 +1,110 @@
+/* Dice.css - Styling and Animation for the Dice Game */
+
+.dice-game {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-image: url('assets/dice background.jpg');
+    background-size: cover;
+    background-position: center; */
+  }
+  
+  /* Player Dice Container */
+  .players-dice-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 20px 0;
+  }
+  
+  /* Each Player's Section */
+  .player-section {
+    text-align: center;
+  }
+  
+  /* Dice container */
+  .dice-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  /* Individual Dice */
+  .dice {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Dice Rolling Animation */
+  @keyframes rollDice {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(90deg); }
+    50% { transform: rotate(180deg); }
+    75% { transform: rotate(270deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Apply animation when rolling */
+  .rolling {
+    animation: rollDice 0.5s ease-in-out infinite;
+  }
+  
+  /* Buttons */
+  .roll-button, .rules-button {
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin: 10px;
+  }
+  
+  .roll-button:hover, .rules-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .roll-button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+  }
+  
+  /* Modal */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 60%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+

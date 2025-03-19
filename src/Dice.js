@@ -120,7 +120,7 @@ function DiceGame() {
 
       {winner && <h2>{winner}</h2>}
 
-      {/* Rules Modal */}
+
       {showRules && (
         <div className="modal">
           <div className="modal-content">
